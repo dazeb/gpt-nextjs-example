@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   if (typeof req.body.prompt === "string") {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: req.body.prompt,
+      prompt: `list 10 domain names based on the following word or words. ${req.body.prompt}.`,
       temperature: 0,
       max_tokens: 1000
     })

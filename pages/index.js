@@ -28,7 +28,7 @@ export default function MyPage() {
 
   return (
     <div className="container">
-      <h1>Give Any Instruction</h1>
+      <h1>ChatGPT Domain Name Generator</h1>
       <form className="our-form" onSubmit={handleSubmit}>
         <input className="prompt-field" type="text" onChange={handleChange} />
         <button className="prompt-button">Go!</button>
